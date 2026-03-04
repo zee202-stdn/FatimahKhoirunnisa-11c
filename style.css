@@ -1,0 +1,321 @@
+body {
+    background-color: rgb(209, 241, 247);
+    font-family: 'Dancing Script', cursive;
+    color: #3a393b;
+    margin: 20px;
+}
+
+.hero-img {
+    display: block;
+    margin: 30px auto;
+    max-width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+nav {
+    background: linear-gradient(90deg, #afc8e5, #85a0a8);
+    padding: 18px 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;     /* diperbesar */
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #3f829c;
+}
+
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    background: white;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+h1 {
+    color: #414346;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.daftar-produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produk {
+    background-color: #fafcff;
+    border: 1px solid #5c809e;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.produk img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.produk h2 {
+    font-size: 20px;
+    color: rgb(25, 92, 179);
+}
+
+.produk h3 {
+    font-size: 16px;
+    color: aqua;
+}
+
+.harga {
+    font-weight: bold;
+    color: rgb(29, 85, 150);
+}
+
+.deskripsi {
+    font-size: 14px;
+    color: #324891;
+}
+
+.product-card p {
+    flex-grow: 1;   /* isi deskripsi ngisi ruang */
+    text-align: justify;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: stretch; /* bikin tinggi ikut rata */
+}
+
+.product-card {
+    width: 320px;              /* samain lebar */
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;    /* penting biar isi bisa diatur */
+    justify-content: space-between;
+}
+
+.artikel {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    background-color: #fdfdfd;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+}
+
+.artikel .penulis {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.artikel .sampul {
+    width: 180px;
+    float: right;
+    margin: 0 0 20px 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.artikel blockquote {
+    font-style: italic;
+    padding-left: 20px;
+    margin: 0 0 20px 20px;
+    border-left: 4px solid #999;
+    color: #444;
+    background-color: #f9f9f9;
+}
+
+.btn-kembali {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 16px;
+    background-color: #5b6066;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-kembali:hover {
+    background-color: #b3bbc2;
+}
+
+.formulir {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulir {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #8a8a8a;
+    color: rgb(253, 250, 250);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #636363;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+.contact {
+    width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button {
+    background-color: #9aadb6;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef7ff;
+    text-align: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.event-card {
+    background: white;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;              /* penting biar gak kepotong */
+    display: block;
+}
+
+.event-card h2 {
+    font-size: 18px;
+    padding: 15px 15px 0;
+}
+
+.event-card p {
+    padding: 5px 15px;
+    color: #555;
+}
+
+button {
+    margin: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #8994a1, #808283);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
